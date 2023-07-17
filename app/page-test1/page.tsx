@@ -3,7 +3,7 @@ export default function Home() {
     return (
      
   
-      <>Page Teste 1</>
+      <>Page Test 1</>
     )
   }
   
