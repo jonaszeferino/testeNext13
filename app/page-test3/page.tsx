@@ -3,7 +3,10 @@ export default function Home() {
     return (
      
   
-      <>Page Test 3</>
+      <>Page Test 3
+      <div>todo mundo pode ver</div>
+      
+      </>
     )
   }
   

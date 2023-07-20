@@ -1,8 +1,17 @@
 
+"use client"; // This is a client component 👈🏽
+
+
 import styles from "../styles/Navbar.module.css";
 import React from "react";
+import { useState, useEffect } from "react";
+
 
 export default function Navbar() {
+
+  const isClient = true; 
+  const [openPerfil, setOpenPerfil] = useState(true)
+
 
   return (
     <div className="min-h-full">
@@ -45,7 +54,7 @@ export default function Navbar() {
   
                 <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
                   
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-0">Perfil</a>
+                  <a href="/page-test5" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" id="user-menu-item-0">Perfil</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem"  id="user-menu-item-1">Configurações</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem"  id="user-menu-item-2">Deslogar</a>
                 </div>
@@ -94,20 +103,20 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="mt-3 space-y-1 px-2">
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Perfil</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Configurações</a>
-            <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Deslogar</a>
-          </div>
+          <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
+  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:visible" role="menuitem" id="user-menu-item-0">Perfil</a>
+  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:visible" role="menuitem" id="user-menu-item-1">Configurações</a>
+  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:visible" role="menuitem" id="user-menu-item-2">Deslogar</a>
+</div>
         </div>
       </div>
     </nav>
   
-    <header className="bg-white shadow">
+    {/* <header className="bg-white shadow">
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900">Movies Page</h1>
       </div>
-    </header>
+    </header> */}
     <main>
       <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         
@@ -117,6 +126,7 @@ export default function Navbar() {
   
   );
 }
+
 
 
 //teste

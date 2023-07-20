@@ -3,9 +3,23 @@ export default function Home() {
     return (
      
   
-      <>Page Test 4
+      <>Perfil do usuário
       
-      <div>todo mundo pode ver</div>  </>
+      <div>So pode ver logado</div>
+      <div>
+
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+
+
+      </div>
+      
+      
+      </>
     )
   }
   
